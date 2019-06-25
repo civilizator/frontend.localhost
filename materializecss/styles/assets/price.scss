@@ -1,0 +1,43 @@
+
+.prices {
+  position: relative;
+
+  .price {
+    text-align: center;
+
+    .price-name {
+      font-size: 32px;
+      padding: 66px 5px 15px;
+
+      .material-icons {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 24px;
+        font-size: 32px;
+      }
+    }
+
+  }
+
+  .price-button-container {
+    position: relative;
+    padding: 20px 0 30px;
+  }
+
+  .price-dollar {
+    font-size: 48px;
+    color: #ec407a;
+    font-family: 'Baloo Bhaina', cursive;
+    font-weight: 100;
+    padding: 20px 0 0;
+    margin: 0 0 -22px;
+
+    span {
+      vertical-align: super;
+      font-size: 20px;
+    }
+  }
+}
+
+

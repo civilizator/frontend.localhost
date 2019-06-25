@@ -1,0 +1,95 @@
+
+.stats-content {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 30px;
+
+  .ul-stats {
+    display: table;
+    position: relative;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    width: 100%;
+    height: 41px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .10), 0 1px 4px 0 rgba(0, 0, 0, .20);
+  }
+
+  .empty {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #C1C1C1;
+    background: #F3F6F8;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 44px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+    text-indent: 20px;
+    font-weight: 400;
+  }
+
+  strong {
+    font-weight: inherit;
+  }
+
+  i {
+    position: inherit;
+    font-style: inherit;
+    left: 140px;
+  }
+
+  i:before {
+    text-align: left;
+    content: '';
+    font-size: 16px;
+    position: absolute;
+    line-height: 40px;
+    width: 100%;
+    left: -90px;
+    transition: .4s cubic-bezier(.49, 1.32, .86, 1.28);
+  }
+
+  .fully {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #FFFFFF;
+    color: #115D85;
+  }
+
+  [data-stats-views] .fully {
+    width: 75%;
+  }
+
+  [data-stats-comments] .fully {
+    width: 53%;
+  }
+
+  [data-stats-like] .fully {
+    width: 26%;
+  }
+
+  [data-stats-followers] .fully {
+    width: 42%;
+  }
+
+  [data-stats-watch] .fully {
+    width: 55%;
+  }
+}
+
+
+

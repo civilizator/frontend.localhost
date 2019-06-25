@@ -1,0 +1,100 @@
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  hyphens: auto;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  list-style-type: none;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fcfcfc;
+}
+
+body {
+  background-color: #efefef ;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+  position: relative;
+  /* overflow-x: hidden; */
+  /* height: inherit; */
+  overflow: hidden;
+}
+
+.container-not-fluid {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  margin: 0 0 2.1rem 0;
+}
+
+.row-shadow {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.24);
+  padding: 26px 14px;
+}
+
+.font-baloo-bhaina {
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 56px;
+  /* font-weight: lighter; */
+  text-transform: uppercase;
+
+  .material-icons {
+    color: rgba(97, 97, 97, 0.37);
+    font-size: 50px;
+    position: absolute;
+    margin: 5px 0 0;
+    //margin: 5px 0px 0 -55px;
+  }
+}
+
+/*    background-color: #efefef !important;*/
+
+/*material tooltip custom*/
+.material-tooltip {
+  color: #ec407a;
+}
+
+.backdrop {
+  background-color: #fff;
+}
+
+.display-flex {
+  display: flex;
+  //position: relative;
+
+  .display-inline-flex {
+    //position: relative;
+    display: inline-flex;
+  }
+}
+
+
+

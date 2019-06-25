@@ -1,0 +1,23 @@
+
+.sidebar-tabs {
+
+  .tabs {
+    background-color: transparent;
+  }
+
+  .tabs .tab a {
+    color: #585858;
+  }
+
+  .tabs .tab:first-child a {
+    text-align: left;
+  }
+
+  .tabs .tab:last-child a {
+    text-align: right;
+  }
+}
+
+
+
+

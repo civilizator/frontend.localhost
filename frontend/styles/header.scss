@@ -1,0 +1,96 @@
+$color-black-box-shadow: #000;
+$color-background-color: #8b0000;
+$color-white: #fff;
+$color-header: #f3f3f3;
+$color-logo: #9f9ca5;
+$color-header-inner: #f3f3f3;
+$color-header-background: #271f1c;
+$color-header-background-before: rgba(60, 52, 49, .76);
+$color-header-logo-link: #b8bfb8;
+$color-header-link: #cdd4d8;
+
+.header {
+  background-color: $color-header;
+  height: 100%;
+}
+
+.header-background {
+  background-color: $color-header-background;
+  background-image: url('../img/stocksnap.io/sound.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 440px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  &::before {
+    background-color: $color-header-background-before;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+
+.header-inner {
+  //background-color: $color-header-inner;
+  padding: 18px 20px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-logo {
+  float: left;
+
+  a {
+    color: $color-header-logo-link;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 22px;
+    outline: none;
+    text-decoration: none;
+  }
+
+  span {
+    color: $color-logo;
+    font-size: 40px;
+  }
+}
+
+.header-nav {
+  float: right;
+  margin: 8px 8px 0 0;
+
+  li {
+    float: left;
+    list-style: none;
+    margin: 0 18px 0 0;
+  }
+
+  a {
+    color: $color-header-link;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 14px 0 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+
+}
+
+
+
+
+
+

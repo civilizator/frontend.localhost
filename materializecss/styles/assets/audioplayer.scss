@@ -1,0 +1,245 @@
+$line-height-playlist: 53px;
+$opacity-playlist-count-time: .25;
+$color-playlist-count-time: #000;
+$height-control-playlist: 380px;
+$width-left-audioplayer: 300px;
+
+.audio-player {
+/*   margin: 0 -15px; */
+  position: relative;
+}
+
+.audioplayer-left-container {
+  display: block;
+  float: left;
+  position: relative;
+  width: $width-left-audioplayer;
+
+  .audioplayer-img-preview {
+    width: 100%;
+    height: auto;
+    /*  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .8); */
+  }
+
+  .audioplayer-control {
+    position: relative;
+    height: $height-control-playlist;
+
+    .audioplayer-title{
+      position: relative;
+      margin: 0 0 14px;
+    }
+
+        h5, h6 {
+          font-family: 'Baloo Bhaina', cursive;
+          color: #4c4b4b;
+        }
+
+    .inner-audioplayer-control {
+      width: $width-left-audioplayer - 40;
+      margin: 0 auto;
+      padding: 12px 0 0;
+    }
+
+    .glyphicon-volume-up {
+      position: absolute;
+      cursor: pointer;
+      bottom: 0;
+      width: 40px;
+      height: 34px;
+      top: auto;
+      font-size: 18px;
+      background-color: #f0f0f0;
+      color: rgba(76, 75, 75, 0.68);
+      border-radius: 0 37px 0 0;
+      margin: 0 0 0 -20px;
+      line-height: 42px;
+      text-indent: 8px;
+      display: none;
+    }
+
+    .back-playpause-forward {
+      text-align: center;
+    }
+  }
+
+  .back-playpause-forward i {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    margin: 0 2px 0;
+    color: rgba(76, 75, 75, 0.94);
+  }
+
+}
+
+.box-audio-seek {
+  box-sizing: border-box;
+  height: 9px;
+  left: 0;
+  position: relative;
+  right: 0;
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+
+.audio-seek {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  top: 1px;
+  margin: auto;
+  width: 100%;
+  height: 4px;
+
+  &::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    display: block;
+    margin: 2px 0;
+    height: 80%;
+    top: 0;
+    background: rgb(249, 248, 248);
+  }
+}
+
+.audio-buffered,
+.audio-loaded {
+  box-sizing: border-box;
+  position: absolute;
+  width: 0;
+  display: block;
+  margin: 2px 0;
+  height: 80%;
+  top: 0;
+  transition: .25s cubic-bezier(0.970, 0.415, 0.715, 0.905);
+}
+
+.audio-buffered {
+  background: rgba(236, 64, 122, 0.22);
+  width: 70%;
+}
+
+.audio-loaded {
+  background: #ec407a;
+  width: 30%;
+  z-index: 1;
+}
+
+.progress-mark {
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  margin: 2px 0;
+  height: 14px;
+  z-index: 2;
+  background: rgba(184, 184, 184, 0.18);
+  border-right: 1px solid #8E8E8E;
+}
+
+.audioplayer-right-container {
+  float: right;
+  width: calc(100% - #{$width-left-audioplayer});
+  box-shadow: -1px 0 4px 0 rgba(0, 0, 0, 0.07);
+  margin: 0 -22px 0 0;
+
+  .audioplayer-playlist {
+    height: $height-control-playlist;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    ul {
+      counter-reset: counttrack;
+      width: calc(100% - 16px);
+      margin: 0 0 0 auto;
+      padding: 12px 0;
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      height: $line-height-playlist;
+    }
+
+    li::before {
+      content: counter(counttrack) '';
+      counter-increment: counttrack;
+      display: inline-block;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      opacity: $opacity-playlist-count-time;
+      text-align: right;
+      vertical-align: baseline;
+      width: 18px;
+      line-height: $line-height-playlist;
+      color: $color-playlist-count-time;
+      height: 100%;
+      position: absolute;
+      left: -6px;
+    }
+
+    li::after {
+      box-shadow: 0 1px 0 0 $color-playlist-count-time;
+      opacity: $opacity-playlist-count-time * .4;
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 26px;
+      right: 48px;
+      bottom: 0;
+    }
+
+    li:last-child::after {
+      box-shadow: none;
+    }
+
+    span {
+      float: right;
+      font-size: 12px;
+      font-weight: bold;
+      opacity: $opacity-playlist-count-time;
+      line-height: $line-height-playlist;
+      color: $color-playlist-count-time;
+      height: 100%;
+      position: absolute;
+      right: 50px;
+    }
+
+    .track {
+      font-size: 16px;
+      color: rgb(107, 104, 104);
+      text-decoration: none;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: $line-height-playlist;
+      position: absolute;
+      right: 78px;
+      left: 34px;
+      height: 100%;
+    }
+
+    .active {
+      .track {
+        color: #ff4081;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+

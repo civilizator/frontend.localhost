@@ -1,0 +1,151 @@
+.sidebar {
+      box-shadow: 0 0 0 10px #fbfbff inset;
+}
+
+.search-blog, 
+.archive-page, 
+.sort-thematics {
+  position: relative;
+  width: 100%;
+  top: 0;
+  margin: 0 0 20px;
+  /* padding: 14px; */
+}
+
+.archive-tabs {
+  position: relative;
+}
+
+.container-button-archive {
+  position: relative;
+  margin: 4px 0 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.button-archive {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  /* margin: 0 0 0 -3px; */
+  cursor: pointer;
+  padding: 8px 10px 3px;
+  font-size: 16px;
+  text-transform: uppercase; 
+    color: #7d7878;
+        font-family: 'Baloo Bhaina', cursive;
+        letter-spacing: 1px;
+/*     font-weight: 900; */
+}
+
+.mark-archive-button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  background: #FBFBFF;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+.setup-box, 
+.archive-page-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* height: 180px; */
+}
+
+.archive-tabs-box, 
+.sub-setup-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.outerBox {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  float: left;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: opacity .4s;
+}
+
+.outerBox.active {
+  opacity: 1;
+  -webkit-transition: 0s;
+  transition: opacity 0s;
+}
+
+.archive-tabs-box .innerBox, 
+.sub-setup-box .innerBox {
+  position: relative;
+  overflow: hidden;
+  min-height: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: height .3s cubic-bezier(0.37, 0.32, 0.21, 1.45);
+}
+
+.archive-page a {
+  display: table;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  padding: 2px 0 0 8px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  text-indent: 16px;
+  text-transform: capitalize;
+  color: #1C3542;
+}
+
+.sidebar {
+  .sort-thematics a {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  padding: 0 27px 0 12px;
+    margin: 0 3px 6px 0;
+    line-height: 36px;
+    letter-spacing: .6px;
+}
+}
+
+
+
+
+.sidebar .sort-thematics a {
+  /* background: #FDFDFD; */
+  background: rgba(239, 239, 255, 0.25);
+  color: #1C3542;
+  /* box-shadow: 0 0 0 1px #D2D8DB inset; */
+  box-shadow: 0 -1px 0 1px #ECECEC inset, 0 1px 0 1px #F9FAFB inset;
+  /* box-shadow: 1px -1px 0 0 white inset, 2px -2px 0 0 #C7D9E6 inset, -1px 1px 0 0 #C7D9E6 inset, -2px 2px 0 0 #FFFFFF inset; */
+  border-radius: 3px;
+}
+
+.archive-page {
+  li {
+    letter-spacing: 1px;
+  }
+  li:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  li:nth-child(even) {
+    background-color: #fbfbff;
+  }
+}
+
+
+
+

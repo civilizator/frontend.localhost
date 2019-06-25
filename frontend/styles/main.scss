@@ -1,0 +1,79 @@
+//@import 'normalize.css/normalize';
+//@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
+
+/*bootstrap*/
+@import 'bootstrap/bootstrap';
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  hyphens: auto;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  list-style-type: none;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.main-preview {
+  margin: 0 0 28px;
+  min-height: 100px;
+  width: 100%;
+}
+
+.background--color {
+  background: #fff;
+  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+
+/*header*/
+@import './header';
+
+/*footer*/
+@import './footer';
+
+/*home*/
+@import './home';
+
+/*audio player*/
+@import './audioplayer';
+
+/*blog preview*/
+@import './blogpreview';
+
+/*stats*/
+@import './stats';
+
+/*counter*/
+@import './counter';
+
+/*sidebar*/
+@import './sidebar';
+
+/*tabs*/
+@import './tabs';
+
+/*carousel*/
+@import './carousel';
+
+/*main page*/
+@import './mainpage';
+
+
+
+

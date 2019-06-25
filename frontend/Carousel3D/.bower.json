@@ -1,0 +1,38 @@
+{
+  "name": "Carousel3D",
+  "homepage": "https://github.com/billkang/Carousel3D",
+  "authors": [
+    "bill.kang <kbh-1983@163.com>"
+  ],
+  "description": "This is a jquery plugin 3d Carousel, and you can show the pictures in 3d way. It's very cool.",
+  "main": [
+    "jquery.Carousel3D.js",
+    "jquery.Carousel3D.css"
+  ],
+  "keywords": [
+    "3d",
+    "carousel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "modernizr": ">=2.6.2"
+  },
+  "_release": "ef6244c143",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ef6244c143a0e73a854ae47a0bccd7527515053a"
+  },
+  "_source": "https://github.com/billkang/Carousel3D.git",
+  "_target": "*",
+  "_originalSource": "carousel3d",
+  "_direct": true
+}

@@ -1,0 +1,46 @@
+
+.recent-posts {
+
+  .recent-posts-comment {
+    line-height: 14px;
+    color: #ec407a;
+  }
+  .collection .collection-item {
+    background-color: transparent;
+  }
+
+  .collection {
+    margin: 0 0 1rem;
+    border: none;
+  }
+
+  .collection .collection-item {
+    border-bottom: 1px solid #ddd;
+    padding: 14px 20px;
+  }
+
+  .collection .collection-item.avatar .circle {
+    left: 0;
+    top: 18px;
+    border-top-left-radius: 3px;
+  }
+
+  .collection .collection-item.avatar {
+    padding-left: 58px;
+  }
+
+  .collection .collection-item.avatar .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #585858;
+  }
+
+  .collection .collection-item.avatar p {
+    text-transform: lowercase;
+    color: #807b7e;
+  }
+}
+
+
+
+

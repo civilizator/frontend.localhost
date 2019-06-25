@@ -1,0 +1,52 @@
+
+
+
+.tags {
+  padding: 14px 0;
+
+  .chip {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #ddd;
+    color: #5a5c61;
+    font-weight: normal;
+    border-radius: 3px;
+    margin: 0 8px 10px 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: .6px;
+    transition: .3s;
+
+    .label_outline {
+      float: right;
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 8px;
+    pointer-events: none;
+      color: #e4cdd5;
+      transition: .3s;
+    }
+  }
+
+  .chip:hover {
+    //background-color: #ec407a;
+    box-shadow: 0 0 0 1px #EB427D;
+    color: #EB427D;
+    transition: .05s;
+
+    .label_outline {
+      color: inherit;
+      transition: .05s;
+    }
+  }
+
+  .chip:active {
+    background-color: transparent;
+    color: #fff;
+    transition: 0s;
+  }
+}
+
+.waves-effect.waves-custom .waves-ripple {
+  background-color: #EB427D;
+}

@@ -1,0 +1,123 @@
+
+.header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  transition: .1s;
+
+  .header-inner {
+    padding: 18px 20px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    transition: .1s;
+
+    .header-logo {
+      float: left;
+      margin: 1px 0 0;
+
+      a {
+        color: #dddcde;
+        font-family: 'Baloo Bhaina', cursive;
+        font-size: 22px;
+        outline: none;
+        text-decoration: none;
+      }
+
+      span {
+        color: #f1dfe5;
+        font-size: 40px;
+      }
+    }
+
+    .header-nav {
+      float: right;
+      margin: 15px 8px 0 0;
+      position: relative;
+
+      li {
+        float: left;
+        list-style: none;
+        //margin: 0 18px 0 0;
+      }
+
+      .btn {
+        height: 32px;
+        line-height: 32px;
+      }
+
+      a {
+        color: #cdd4d8;
+        //display: inline-block;
+        //font-family: "Open Sans", sans-serif;
+        //font-size: 14px;
+        //font-weight: bold;
+        //outline: none;
+        //padding: 14px 0 6px;
+        //text-decoration: none;
+        //text-transform: uppercase;
+        box-shadow: none;
+        padding: 0 .3rem;
+        background-color: transparent;
+      }
+    }
+
+    /*header nav mark*/
+    .mark-btn-1 {
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+      box-shadow: 0 0 0 1px rgb(210, 183, 197);
+      border-radius: 2px;
+      transition-timing-function: cubic-bezier(0.54, 0.23, 0.57, 0.34) !important;
+    }
+
+    .mark-btn-2 {
+      left: 4px;
+      position: absolute;
+      z-index: 0;
+      box-shadow: 0 0 0 2px #d2b7c5 inset;
+      border-radius: 2px;
+      transition: .2s cubic-bezier(0.4, -0.11, 0.49, 0.17) !important;
+      height: 3px !important;
+      bottom: 2px;
+    }
+  }
+
+
+  &.header-scroll {
+    height: 50px;
+
+    .header-inner {
+      padding: 0 20px;
+
+      .header-logo a {
+        line-height: 50px;
+      }
+
+      .header-logo span {
+        font-size: 30px;
+      }
+
+      .header-nav {
+        margin: 8px 8px 0 0;
+
+        //.btn {
+        //  height: 30px;
+        //  line-height: 30px;
+        //}
+      }
+    }
+
+
+  }
+}
+
+
+
+
+

@@ -1,0 +1,52 @@
+
+.popular-posts {
+
+  .popular-posts-comment {
+    line-height: 14px;
+    color: #ec407a;
+  }
+
+  .collection {
+    margin: 0 0 1rem;
+    border: none;
+  }
+
+  .collection .collection-item {
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 20px;
+  }
+
+  .collection .collection-item.avatar .circle {
+    left: 0;
+    top: 18px;
+    border-radius: 2px;
+    width: 84px;
+    height: 66px;
+    box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.23);
+  }
+
+  .collection .collection-item.avatar i.circle {
+    font-size: 24px;
+    line-height: 66px;
+  }
+
+  .collection .collection-item.avatar {
+    padding-left: 100px;
+  }
+
+  .collection .collection-item.avatar .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #585858;
+  }
+
+  .collection .collection-item.avatar p {
+    text-transform: lowercase;
+    color: #807b7e;
+  }
+}
+
+
+
+

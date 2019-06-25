@@ -1,0 +1,101 @@
+
+.counter-content {
+  position: relative;
+  padding: 30px 0 0;
+  //font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  .counter-container {
+    padding: 0;
+  }
+
+  .ul-counter {
+    margin: 0 auto 30px;
+    height: 100%;
+    display: table;
+    padding: 28px 14px;
+/*     box-shadow: 0 0 0 1px #f0f0f0; */
+  }
+
+  li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    margin: 0 18px;
+    float: left;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.10), 0 1px 4px 0 rgba(0, 0, 0, 0.20);
+    background: #F3F6F8;
+  }
+
+  .left-container-scala,
+  .right-container-scala {
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    top: 0;
+  }
+
+  .left-container-scala {
+    left: 0;
+  }
+
+  .right-container-scala {
+    right: 0;
+  }
+
+  .center {
+        position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    line-height: 88px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 100%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #FFFFFF;
+    color: #115D85;
+  }
+
+  .scala {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+  }
+
+  .left-container-scala .scala {
+    left: 100%;
+    transform-origin: 0% 50%;
+  }
+
+  .right-container-scala .scala {
+    right: 100%;
+    transform-origin: 100% 50%;
+  }
+
+  i {
+    position: inherit;
+    font-size: 16px;
+    font-style: normal;
+    left: 0;
+    right: 0;
+    top: 34px;
+  }
+}
+
+
+
+
+
+

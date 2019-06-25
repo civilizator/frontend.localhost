@@ -1,0 +1,93 @@
+
+
+.biographies {
+  position: relative;
+
+  .card {
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .container-img {
+
+
+    &::before {
+      z-index: 0;
+      //content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 70px;
+      background-image: url(../../img/bio/5874-black-and-white-man-portrait-grimace.jpg);
+      /* background-position: center; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      -webkit-filter: blur(2px) invert(1);
+      /* box-shadow: 0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22); */
+      /* background-color: rgba(0, 0, 0, 0.16); */
+      transition: .2s;
+    }
+  }
+
+  .container-img:hover {
+    &::before {
+      //height: 100%;
+    }
+  }
+
+  .bio-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    .bio-name-text {
+      z-index: 2;
+      position: relative;
+      padding: 0 40px 34px;
+
+      h3 {
+        font-weight: bold;
+        color: #ec407a;
+        //text-align: center;
+      }
+
+      h5 {
+        color: #dad1d4;
+      }
+
+      p {
+        color: #b7abae;
+      }
+    }
+
+    .bio-name-bottom {
+      z-index: 2;
+      position: relative;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ec407a;
+      padding: 12px 0;
+      box-shadow: 0 -1px 0 0 #907d88;
+
+      p {
+        color: #bbb8ba;
+        text-align: center;
+      }
+    }
+  }
+
+
+}
+
+
+
